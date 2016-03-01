@@ -1,0 +1,13 @@
+{
+    "name": "sllh/slack-bundle",
+    "description": "Symfony bundle integration of maknz/slack library",
+    "type": "bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sullivan SENECHAL",
+            "email": "soullivaneuh@gmail.com"
+        }
+    ],
+    "require": {}
+}
