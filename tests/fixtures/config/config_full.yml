@@ -1,0 +1,13 @@
+nexy_slack:
+  endpoint: https://hooks.slack.com/services/XXXXX/XXXXX/XXXXXXXXXX
+  channel: dev
+  username: jdoe
+  icon: icon.png
+  link_names: true
+  unfurl_links: true
+  unfurl_media: false
+  allow_markdown: false
+  markdown_in_attachments:
+   - test
+   - foo
+   - bar
