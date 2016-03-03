@@ -2,6 +2,7 @@
 
 namespace Nexy\SlackBundle\Tests\DependencyInjection;
 
+use Maknz\Slack\Client;
 use Matthias\SymfonyDependencyInjectionTest\PhpUnit\AbstractExtensionTestCase;
 use Nexy\SlackBundle\DependencyInjection\NexySlackExtension;
 
@@ -21,12 +22,8 @@ class NexySlackExtensionTest extends AbstractExtensionTestCase
 
     public function testLoadWithMinimalConfiguration()
     {
-        $this->load([
-            'endpoint' => 'https://hooks.slack.com/services/XXXXX/XXXXX/XXXXXXXXXX',
-        ]);
-
-        $this->assertContainerBuilderHasParameter('nexy_slack.endpoint', 'https://hooks.slack.com/services/XXXXX/XXXXX/XXXXXXXXXX');
-        $this->assertContainerBuilderHasParameter('nexy_slack.config', [
+        $endpoint = 'https://hooks.slack.com/services/XXXXX/XXXXX/XXXXXXXXXX';
+        $slackConfig = [
             'channel' => null,
             'username' => null,
             'icon' => null,
@@ -35,7 +32,22 @@ class NexySlackExtensionTest extends AbstractExtensionTestCase
             'unfurl_media' => true,
             'allow_markdown' => true,
             'markdown_in_attachments' => [],
+        ];
+
+        $this->load([
+            'endpoint' => $endpoint,
         ]);
+
+        $this->assertContainerBuilderHasParameter('nexy_slack.endpoint', $endpoint);
+        $this->assertContainerBuilderHasParameter('nexy_slack.config', $slackConfig);
+
+        $this->assertContainerBuilderHasService('nexy_slack.client', Client::class);
+
+        $this->assertContainerBuilderHasServiceDefinitionWithArgument('nexy_slack.client', 0, '%nexy_slack.endpoint%');
+        $this->assertContainerBuilderHasServiceDefinitionWithArgument('nexy_slack.client', 1, '%nexy_slack.config%');
+
+        $this->assertSame($endpoint, $this->container->get('nexy_slack.client')->getEndPoint());
+        $this->assertSame($slackConfig['channel'], $this->container->get('nexy_slack.client')->getDefaultChannel());
     }
 
     /**
