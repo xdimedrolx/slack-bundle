@@ -17,7 +17,10 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->scalarNode('endpoint')->isRequired()->cannotBeEmpty()->end()
+                ->scalarNode('endpoint')
+                    ->isRequired()->cannotBeEmpty()
+                    ->info('The Slack API Incoming WebHooks URL.')
+                ->end()
                 ->scalarNode('channel')->defaultNull()->end()
                 ->scalarNode('username')->defaultNull()->end()
                 ->scalarNode('icon')->defaultNull()->end()
