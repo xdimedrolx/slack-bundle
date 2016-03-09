@@ -1,7 +1,7 @@
 {
     "name": "nexylan/slack-bundle",
     "description": "Symfony bundle integration of maknz/slack library",
-    "type": "bundle",
+    "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
         {
