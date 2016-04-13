@@ -23,7 +23,7 @@ Symfony bundle integration of the popular [maknz/slack](https://github.com/maknz
 All the installation and usage instructions are located in this README.
 Check it for specific version:
 
-* [__1.x__](https://github.com/Soullivaneuh/IsoCodesValidator/tree/master) with support for Symfony `>=2.8`
+* [__1.x__](https://github.com/Soullivaneuh/IsoCodesValidator/tree/master) with support for Symfony `>=2.7`
 
 ## Prerequisites
 
