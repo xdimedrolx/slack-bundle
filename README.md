@@ -5,8 +5,8 @@ Symfony bundle integration of the popular [maknz/slack](https://github.com/maknz
 [![Latest Stable Version](https://poser.pugx.org/nexylan/slack-bundle/v/stable)](https://packagist.org/packages/nexylan/slack-bundle)
 [![Latest Unstable Version](https://poser.pugx.org/nexylan/slack-bundle/v/unstable)](https://packagist.org/packages/nexylan/slack-bundle)
 [![License](https://poser.pugx.org/nexylan/slack-bundle/license)](https://packagist.org/packages/nexylan/slack-bundle)
-[![Dependency Status](https://www.versioneye.com/php/nexy:slack-bundle/badge.svg)](https://www.versioneye.com/php/nexylan:slack-bundle)
-[![Reference Status](https://www.versioneye.com/php/nexy:slack-bundle/reference_badge.svg)](https://www.versioneye.com/php/nexylan:slack-bundle/references)
+[![Dependency Status](https://www.versioneye.com/php/nexylan:slack-bundle/badge.svg)](https://www.versioneye.com/php/nexylan:slack-bundle)
+[![Reference Status](https://www.versioneye.com/php/nexylan:slack-bundle/reference_badge.svg)](https://www.versioneye.com/php/nexylan:slack-bundle/references)
 
 [![Total Downloads](https://poser.pugx.org/nexylan/slack-bundle/downloads)](https://packagist.org/packages/nexylan/slack-bundle)
 [![Monthly Downloads](https://poser.pugx.org/nexylan/slack-bundle/d/monthly)](https://packagist.org/packages/nexylan/slack-bundle)
