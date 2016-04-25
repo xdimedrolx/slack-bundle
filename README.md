@@ -30,7 +30,7 @@ Check it for specific version:
 This version of the project requires:
 
 * PHP 5.6+
-* Symfony 2.8+
+* Symfony 2.7+
 
 ## Installation
 
