@@ -11,7 +11,7 @@ use Nexy\SlackBundle\NexySlackBundle;
 class NexySlackBundleTest extends AbstractContainerBuilderTestCase
 {
     /**
-     * @var NexyIsoCodesValidatorBundle
+     * @var NexySlackBundle
      */
     protected $bundle;
 
