@@ -23,6 +23,7 @@ Symfony bundle integration of the popular [maknz/slack](https://github.com/maknz
 All the installation and usage instructions are located in this README.
 Check it for specific version:
 
+* [__0.x__](https://github.com/xdimedrolx/slack-bundle/tree/0.1) with support for Symfony `>=2.6`
 * [__1.x__](https://github.com/nexylan/NexySlackBundle/tree/master) with support for Symfony `>=2.7`
 
 ## Prerequisites
